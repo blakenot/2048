@@ -142,7 +142,7 @@ public class TileBoard : MonoBehaviour
         a.Merge(b.cell);
 
         int index = Mathf.Clamp(IndexOf(b.state) + 1, 0, tileStates.Length - 1);
-        int number = b.number * 2;
+        int number = b.number * 3;
         b.SetState(tileStates[index], number); 
         gameManager.IncreaseScore(number);
     }
